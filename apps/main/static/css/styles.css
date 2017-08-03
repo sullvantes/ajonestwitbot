@@ -1,0 +1,565 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper{
+    width: auto;
+}
+#headerLeft{ 
+    background-color: #260354;
+    height: 75px;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+#headerRight{
+    background-color: #260354;
+    height: 75px;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+.headerTextTop{
+    font-size: 13px;
+}
+.headerTextBottom{
+    font-size: 17px;
+}
+.searchBar{
+    height: 70px;
+    background-color: #260354;
+}
+#logo{
+    height: 75px;
+    width: 125px;
+}
+.inlineBlock{
+    display: inline-block;
+    color: white;
+}
+.marginLeft{
+    float: right;
+    margin-left: 20px;
+}
+#headerGHE{
+    height: 30px;
+}
+#headerSMS{
+    height: 30px;
+}
+#searchBar{
+    width: 450px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 33%;
+    font-size: 18px;
+    vertical-align: top;
+    margin-right: 0px;
+}
+#searchIcon{
+    height: 45px;
+    width: 45px;
+    margin-top: 15px;
+}
+#locationRow{
+    height: 50px;
+    border-bottom: 1px solid #E7EAEC;
+    background-color: #F6F8F9;
+}
+
+#loc-when{
+    width: 950px;
+    margin: auto;
+}
+
+#location{
+    width: 450px;
+    height: 50px;
+    display: inline-block;
+    padding-left: 50px;
+    vertical-align: top;
+    border-left: 1px solid #E7EAEC;
+    border-right: 1px solid #E7EAEC;
+    color: rgb(82,82,82);
+    line-height: 50px;
+}
+#location h3{
+    font-size: 18px;
+}
+
+#when h3{
+    font-size: 18px;
+}
+
+#when{
+    width: 450px;
+    height: 50px;
+    display: inline-block;
+    padding-left: 50px;
+    vertical-align: top;
+    border-right: 1px solid #E7EAEC;
+    color: rgb(82,82,82);
+    line-height: 50px;
+}
+
+#cal{
+    height: 23px;
+    border: 1px solid rgb(166,166,166);
+    border-radius: 5px;
+    box-shadow: none;
+    background: rgb(246,248,249);
+}
+
+#cal:focus{
+    outline: none;
+}
+.dropDownIcon{
+    height: 15px;
+    width: 45px;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+.locationWhenText{
+    display: inline-block;
+    color: rgb(82,82,82);
+    font-size: 14px;
+}
+.locationIcon{
+    height: 17px;
+    width: 17px;
+}
+#body{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F6F8F9;
+}
+.eventContainer{
+    text-align: left;
+    border: 1px solid #e7eaec;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.title{
+    height: 68px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+.event-groupings-list{
+    display: block;
+}
+.event{
+    position: relative;
+    height: 120px;
+    box-sizing: border-box;
+    border-top: 1px solid #e7eaec;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    overflow: hidden;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 180px;
+    vertical-align: bottom;
+}
+
+.seeMore{
+    height: 56px;
+    box-sizing: border-box;
+    padding: 17px;
+    border-top: 1px solid #e7eaec;
+    color: #206EA3;
+}
+.starIcon{
+    height: 15px;
+    width: 17px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.eventTitleHeader{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    color: #525252;
+    font-weight: bold;
+    font-size: 17px;
+    overflow:hidden;
+}
+.eventDate{
+    width: 95px;
+    height: 95px;
+    padding-top: 15px;
+    display: inline-block;
+}
+.eventDay{
+    width: 95px;
+    height: 50px;
+    border-right: 1px solid #CFD4D9;
+    padding-left: 25px;
+}
+.day{
+    margin-top: 10px;
+    height: 24px;
+    width: 100%;
+    color: #00A1A1;
+    font-weight: 500;
+    font-size: 21px;
+}
+.monthDay{
+    height: 20px;
+    color: #87909A;
+    margin-top: 5px;
+}
+.eventDetails{
+    display: inline-block;
+    margin-left: 5px;
+    padding-right: 10px;
+    vertical-align: top;
+    padding-top: 25px;
+    overflow:hidden;
+}
+.eventTitle{
+    font-size: 16px;
+    color: #085F99;
+    overflow:hidden;
+}
+.eventTimeLocation{
+    height: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #828282;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+#footer{
+    height: 250px;
+    border-top: 1px solid #CFD4D9;
+    padding: 20px 20px 20px 150px;
+    background-color: #F6F8F9;
+}
+#footerGetApps{
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top;
+    color: #5C6570;
+}
+#footerConnectWithUs{
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top;
+    color: #5C6570;
+}
+#footerAbout{
+    width: 500px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+.connectWithUsMedia{
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+#messenger{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#usaLogo{
+    height: 20px;
+    width: 20px;
+    border-radius: 9px;
+    display: inline-block;
+}
+#usaText{
+    display: inline-block;
+    font-size: 14px;
+}
+#aboutStubHub{
+    width: 250px;
+    height: 250px; 
+    display: inline-block;
+    vertical-align: top;
+    color: #5C6570;
+}
+#fanHub{
+    width: 220px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    color: #5C6570;
+}
+li{
+    list-style-type: none;
+    margin-top: 5px;
+}
+#rights{
+    height: 120px;
+    width: 90%;
+    border-top: 1px solid #CFD4D9;
+}
+#fanProtect{
+    width: 300px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+#allRightsReserved{
+    width: 825px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 70px;
+    padding-left: 175px;
+}
+h6{
+    margin-bottom: 0px;
+    color: #616A75;
+}
+#rightsTextTop{
+    font-size: 10px;
+    margin-bottom: 0px;
+    color: #7E868F;
+}
+#rightsTextBottom{
+    font-size: 10px;
+    margin-left: 40px;
+    color: #7E868F;
+}
+
+
+/* ADDING LOGIN MODAL STYLES HERE */
+
+.msg {
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.left{
+    margin: -15px;
+}
+
+.modal.custom .modal-dialog {
+    margin:0 auto;
+}
+
+.modal.custom .modal-content {
+    border-radius: 0px;
+}
+
+.custom-close{
+    margin: 10px;
+    display: block;
+    margin-left: 95%;
+}
+
+.custom-input {
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid grey;
+}
+
+.custom-name-input{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: none;
+    width: 80%;
+    height: 40px;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.custom-input:focus {
+    outline: none !important;
+    border-bottom: 3px solid rgb(217,65,133);
+    box-shadow: none;
+}
+
+.custom-name-input:focus {
+    outline: none !important;
+    border-bottom: 3px solid rgb(217,65,133);
+    box-shadow: none;
+}
+
+.login-img{
+    width: 150px;
+    height: 180px;
+}
+
+.login{
+    display: block;
+    margin-left: 22px;;
+    margin-top: 10px;
+    border-radius: 0px;
+    border: none;
+    height: 50px;
+    width: 260px;
+    background: rgb(217,65,133);
+    color: white;
+}
+
+.fb-login{
+    display: block;
+    margin: 10px 0px 10px 22px;
+    border-radius: 0px;
+    border: none;
+    height: 50px;
+    width: 260px;
+    background: rgb(76,104,167);
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.fb-register{
+    display: block;
+    margin: 10px 0px 10px 62px;
+    border-radius: 0px;
+    border: none;
+    height: 50px;
+    width: 260px;
+    background: rgb(76,104,167);
+    color: white;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.fb-logo{
+    width:60px;
+    height:20px;
+    margin-bottom: 2px;
+}
+
+.login-head{
+    color: rgb(82,82,82);
+}
+
+.or-bar{
+    height: 14px;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.or-left {
+    height: 2px;
+    width: 135px;
+    background: rgb(230,233,235);
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-right: 4px;
+}
+
+.or-right {
+    height: 2px;
+    width: 135px;
+    background: rgb(230,233,235);
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-left: 4px;
+}
+
+.or-bar p{
+    font-size: 14px;
+    vertical-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgb(102,102,102);
+}
+
+.login-form{
+    margin-top: 20px;
+}
+
+.forgot{
+    text-align: center;
+    color: rgb(8,95,153);
+    height: 130px;
+}
+
+.new-to-stub{
+    text-align: center;
+}
+
+#sign-up, #login-now, .blue-text{
+    color: rgb(8,95,153);
+}
+
+
+.indent{
+    margin-left: 40px;
+}
+
+.with-stub{
+    margin-bottom: -10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(91,101,112);
+}
+
+.agreement{
+    color: rgb(102,102,102);  
+    font-size: 12px;  
+    margin-bottom: 50px;
+}
+
+.blue-text{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#login-now, #sign-up{
+    font-size: 16px;
+}
+
+#choose-reg{
+    display: none;
+}
+
+#modal-btn{
+    text-decoration: none;
+    border: none;
+    background: #260354;
+}
+
+#modal-btn:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
+#modal-btn h5{
+    font-size: 17px;
+    font-weight: 100%;
+}
+.modal-switch{
+    text-decoration: none;
+    border: none;
+    background: white;
+}
+
+.modal-switch:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+.footerTextSize{
+    font-size: 15px;
+}
+.footerTextSizeSmall{
+    font-size: 11px;
+}
+li{
+    font-size: 12px;
+}

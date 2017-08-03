@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+    <title>Alex Jones' House of Reason -- Home</title>
+
+
+    {% include 'main/header.html' %}
+    
+      <div class="row marketing">
+        <div class="col-lg-10">
+        <h3>Recently Added Quotes</h3>
+        {% if quotes %}
+
+        <table class="table table-striped">
+            <thead>
+                <th>Quote</th>
+                <th>Tags</th>
+                <th>Add Tags</th>
+                </thead>
+            <tbody>
+                 {% for quote in quotes %}
+                <tr>
+                    <td>{{quote.quote}}</td>
+                    <td>{{quote.tags}}</td>
+                    <td>
+                        <form action="{% url 'quotes:add_tag' quote_id=quote.id %}" method='post'>
+                        {% csrf_token %}
+                        <input type="text" class="form-control" name = "tags" id="tags">
+                        <input type=submit value="Add Tag"></td>
+                        </form>
+                </tr>
+                  {% endfor %}
+                
+            </tbody>
+        </table>
+        {% else %}
+          <h3>There are not quotes at this time.</h3>
+        {% endif %}  
+        </div>
+
+        
+        
+        <div class="col-lg-10">
+        <h3>Contribute a Quote</h3><b>Quotes require approval/verifiaction before being used. </b>
+          <div class="container">
+          <form action="{% url 'quotes:add' %}" method='post'>
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="comment">Quote:</label>
+                <textarea class="form-control" rows="2" name= "quote"  id="quote"></textarea>
+            <!-- <input type="hidden" name="user_id" value="" -->
+            </div> <br>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Tags(three or more, comma separated)(This is searched for in tweets):</label>
+              <input type="text" class="form-control" name = "tags" id="tags">
+            </div><br>
+            <input type=submit value="Submit">
+          </form>
+          </div>
+        <br><br><br><br><br>
+      <footer class="footer">
+        <p>Established July 2017</p>
+      </footer>
+      </div> 
+
+      </div>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
