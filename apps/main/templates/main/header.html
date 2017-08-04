@@ -39,9 +39,9 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation"><a href="{% url 'home:index'%}">Home</a></li>
+            <li role="presentation"><a href="{% url 'home:about'%}">About</a></li>
+            <li role="presentation"><a href="{% url 'home:contact'%}">Contact</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">a formal mess-around... an exercise</h3>
@@ -49,6 +49,7 @@
 
       <div class="jumbotron">
         <h1>Alex Jones' House of Reason</h1>
+        <h2>WE ARE OPEN WHILE UNDER CONSTRUCTION</h2>
         <p class="lead">Where your friend's twitter is adorned with the wisdom of Alex Jones </p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
+        <!-- <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
+      </div> 
