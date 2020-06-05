@@ -5,7 +5,7 @@ bs4==0.0.1
 certifi==2017.7.27.1
 cffi==1.10.0
 chardet==3.0.4
-Django==1.11.3
+Django==1.11.29
 -e git+https://github.com/radiac/django-tagulous.git@1e3f3271f24f6f9bb57901e3ca9148d86b003948#egg=django_tagulous
 idna==2.5
 oauthlib==2.0.2
